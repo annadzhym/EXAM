@@ -1,0 +1,57 @@
+.how-it-works {
+  background: @dark-grey;
+  background-size: cover;
+  height: 280px;
+  display: flex;
+  justify-content: space-around;
+
+  &__border {
+    width: 64%;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+
+    &--text {
+      color: @dark-white;
+      font-family: Aleo, sans-serif;
+      font-size: 30px;
+      line-height:26px;
+    }
+
+    &--img {
+      background: url("../img/choice.png") no-repeat top left;
+      height: 96px;
+      width: 13%;
+      display: inline-flex;
+
+      &:hover {
+        animation-name: rotation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        0% {transform:rotate(0deg);}
+        75% {transform:rotate(360deg);}
+      }
+    }
+
+    &--img1 {
+      background-position: 0 0;
+    }
+
+    &--img2 {
+      background-position: -106px 0;
+      //background-position: 50% 0;
+    }
+
+    &--img3 {
+      background-position: -212px 0;
+      //background-position: 100% 0;
+    }
+  }
+}

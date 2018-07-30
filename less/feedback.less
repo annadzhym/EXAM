@@ -1,0 +1,50 @@
+.feedback {
+  background: url("../img/feedback.jpg") no-repeat 50%;
+  background-size: cover;
+  height: 609px;
+  .flex-column;
+
+  &__heading {
+    text-align: center;
+    color: @white;
+    font: 400 30px/26px Aleo, sans-serif;
+    margin: 100px 0 81px;
+  }
+
+  &__content {
+    display: flex;
+    height: 236px;
+    width: 90%;
+    background: rgba(51, 51, 51, 0.7);
+    margin: auto;
+  }
+
+  &__img {
+    width: 40%;
+  }
+
+  &__text {
+    .flex-column-around;
+    padding: 3.5% 0 4% 5%;
+    color: @dark-white;
+    font-family: 'JosefinSans', sans-serif;
+  }
+
+  &__title {
+    .upper-color-text(@dark-white);
+    font-size: 17px;
+  }
+
+  &__message {
+    color: @dark-white;
+    font-size: 12px;
+    line-height: 26px;
+
+    &:before {
+      content: '\201c';
+      font-size: 30px;
+      color: @blue;
+      font-weight: 900;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.menu {
+  background: @blue;
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 5%;
+  }
+
+  &__title {
+    .upper-color-text(@white);
+    font-size: 23px;
+    text-decoration: none;
+
+    &:hover {
+      color: @black;
+    }
+  }
+
+  &__nav {
+    width: 53%;
+    display: flex;
+    justify-content: space-around;
+
+    &--el {
+      .upper-color-text(@white);
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover {
+        color: @black;
+      }
+    }
+  }
+}

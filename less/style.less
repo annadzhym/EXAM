@@ -1,0 +1,121 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@font-face {
+  font-family: Aleo;
+  src: url("../fonts/Aleo-Font/Desktop OTF/Aleo-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "border";
+@import "container";
+@import "header";
+@import "form";
+@import "menu";
+@import "why-choose-us";
+@import "how-it-works";
+@import "spain";
+@import "feedback";
+@import "footer";
+@import (inline)url(../css/reset.css);
+
+@media screen and (min-width: 1780px) {
+
+  .spain {
+    &__house {
+      &--position {
+        padding: 7%;
+      }
+    }
+    &__ocean {
+        padding: 3%;
+      }
+    &__content {
+      width: 40%;
+      height: 250px;
+      padding: 10px;
+    }
+  }
+
+  .why-choose-us {
+    &__title {
+      margin-bottom: 3%;
+    }
+    &__text {
+      margin-bottom: 1%;
+    }
+    &__content {
+      &--column {
+        .flex-column;
+        width: 45%;
+      }
+      &--column1 {
+        padding-top: 3.5%;
+      }
+      &--column2 {
+        padding-top: 1.5%;
+      }
+    }
+    &__img1 {
+      height: 250px;
+    }
+    &__img2 {
+      height: 250px;
+    }
+  }
+}
+
+
+//variables
+@white: rgb(255, 255, 255);
+@dark-white: rgb(232, 232, 232);
+@black: rgb(51, 51, 51);
+@grey: lighten(@black, 35%);
+@dark-grey: lighten(@black, 5%);
+@blue: rgb(73, 107, 254);
+
+//mixins
+.upper-color-text (@color) {
+  color: @color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.fancy-arrow {
+  position: absolute;
+  content: '';
+  border-bottom: 1px solid @white;
+  border-right: 1px solid @white;
+  top: 18px;
+  left: 44%;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.button {
+  background-color:  @blue;
+  width: 46%;
+  height: 50px;
+  border: none;
+  text-transform: uppercase;
+  color: @white;
+
+  &:hover {
+    color: @blue;
+    background-color: @white;
+    cursor: pointer;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+//code
+

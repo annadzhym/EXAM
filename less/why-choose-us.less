@@ -1,0 +1,57 @@
+.why-choose-us {
+  background: url("../img/castle-background.jpg") no-repeat;
+  background-size: cover;
+  height: 566px;
+
+  &__title {
+    font: 30px/26px  Aleo, sans-serif;
+    margin-bottom: 12%;
+    color: @white;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'JosefinSans', sans-serif;
+    color: @dark-white;
+    margin-bottom: 5%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+
+    &--column {
+      .flex-column;
+      width: 40%;
+      justify-content: center;
+    }
+
+    &--column1 {
+      padding-top: 12.5%;
+    }
+
+    &--column2 {
+      padding-top: 9.5%;
+    }
+
+    &--center {
+      .flex-column-around;
+    }
+  }
+
+  &__button {
+    .button;
+  }
+
+  &__img1 {
+    width: 70%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+  }
+
+  &__img2 {
+    width: 70%;
+    margin-left: 28%;
+  }
+}
